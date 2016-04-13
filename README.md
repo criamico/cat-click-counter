@@ -1,6 +1,10 @@
 # cat-click-counter
-Small javascript app to vote your favorite kitten! Inspired by (http://udacity/ud989-cat-clicker-premium-vanilla "udacity/ud989-cat-clicker-premium-vanilla")
+
+Small javascript app to vote your favorite kitten! Inspired by http://udacity/ud989-cat-clicker-premium-vanilla
+
 Coded in plain javascript using MVC approach.
+
+Demo of the project visible at http://criamico.github.io/cat-click-counter/
 
 Images attribution:
 
