@@ -1,0 +1,295 @@
+ body{
+    font-family: 'Muli', sans-serif;
+    background: #E5E8E8;
+}
+
+
+/*----------- Media Queries ----------- */
+
+
+.container{
+    width: 90%;
+    text-align: center;
+    margin: 0 auto;
+    padding: 60px 0 0 0;
+    border: 1px solid #ABB0AE;
+    background: #F8F8F2;
+}
+
+
+header{
+    position: fixed;
+    width: 100%;
+    background-color:  #00BCD4;
+    padding: 20px 0 20px 15px;
+    margin: -10px;
+    z-index: 10;
+    box-shadow: 0px 2px 6px #433F3F;
+
+}
+
+header h1{
+    display: inline;
+    color: white;
+    text-transform: uppercase;
+    font-weight: lighter;
+}
+
+h2{
+    color: #303233;
+    text-align: center;
+}
+
+/*----------- List ----------- */
+
+ p.banner {
+    display: inline;
+    color: white;
+}
+
+.list{
+    overflow: hidden;
+    padding: 5px 0px;
+    margin-top: -1px;
+    text-align: center;
+}
+
+#cat-list{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 10px 0 20px 0;
+    /*border-bottom: 1px solid  #ABB0AE;*/
+    box-shadow: 1px 1px 5px #ABB0AE;
+}
+
+
+#cat-list>li{
+    list-style: none;
+    font-size: 1.2em;
+    margin: 0 10px;
+}
+
+a {
+    text-decoration: none;
+    color:#303233;
+}
+
+a:hover{
+    color: #06A9BE;
+}
+
+.list-thumb{
+    margin-top: 5px;
+    max-width: 150px;
+}
+
+
+
+/*----------- Display Area -----------*/
+
+.frame{
+    position: relative;
+}
+
+
+.display{
+    width:60%;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+}
+
+#cat_img{
+    width: 100%;
+    box-shadow: 2px 2px 5px #ABB0AE;
+    padding: 10px;
+    border-radius: 10px;
+}
+.circle {
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    background-color: rgb(248, 238, 143);
+    border-radius: 100px;
+    left: 90%;
+    top: 5%;
+    z-index: 10;
+    box-shadow: 2px 2px 8px #534D4D;
+
+}
+
+
+#show-counter{
+    width: 100%;
+    color: #303233;
+    font-size: 1.8em;
+    font-weight: bold;
+    margin: 25% auto;
+    text-align: center;
+}
+
+
+/*----------- Admin form and overlay ----------- */
+.admin{
+/*    position: relative;*/
+    margin: 0 auto;
+    width: 40%;
+}
+
+#overlay {
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background-color:rgba(0, 0, 0, 0.6);
+    z-index: 20;
+    display: none;
+}
+
+
+.admin-form{
+    position: fixed;
+    top: 40%;
+    left:40%;
+    text-align: left;
+    padding: 30px;
+    color: #303233;
+    border-radius: 3px;
+    background: #FFFFFF;
+    box-shadow: 3px 3px 6px #433F3F;
+    display: none;
+    z-index: 30;
+
+}
+
+.admin-form>label>input{
+    margin: 10px 0 15px 0;
+}
+
+.admin-form>input{
+     margin: 10px ;
+}
+
+#admin-button{
+    position: absolute;
+    left: 72%;
+    top: 95%;
+    border: none;
+    background-color: #00BCD4;
+    color: white;
+    width: 60px;
+    height: 25px;
+    box-shadow: 1px 1px 4px #433F3F;
+}
+
+#admin-button:focus{
+    border: none;
+    border-style: none;
+    outline:none
+}
+
+.admin-form>input{
+    text-transform: uppercase;
+    border: none;
+    color: #058798;
+    background-color: white;
+    font-weight: 500;
+}
+
+.admin-form>input:focus{
+    border: none;
+    border-style: none;
+    outline:none
+}
+
+label{
+    text-transform: uppercase;
+    font-size: 0.9em;
+    color: #44494C;
+}
+
+span{
+    font-size: 0.8em;
+    text-transform: none;
+    color: grey;
+}
+
+/*----------- Media Queries ----------- */
+@media screen and (max-width: 450px) {
+    .container{
+        width: 100%;
+    }
+    .display{
+        width:90%;
+    }
+    #cat_img{
+        width: 90%;
+    }
+    h1{
+        font-size: 1.4em;
+    }
+    p{
+        font-size: 1em;
+    }
+    .circle{
+        left: 80%;
+        top: 10%;
+    }
+    .admin-form{
+        top: 30%;
+        left: 14%;
+    }
+}
+
+
+@media screen and (max-width: 850px) {
+
+    img.list-thumb{
+        display: none;
+    }
+    #cat-list>li{
+        font-size: 1em;
+        margin: 0 4px;
+        margin:2px;
+    }
+    .circle{
+        width: 35px;
+        height: 35px;
+    }
+    #show-counter{
+        font-size: 1.3em;
+    }
+    .admin-form{
+        top: 35%;
+        left: 30%;
+    }
+
+ }
+
+ @media screen and (min-width: 851px) and (max-width: 1201px) {
+    img.list-thumb{
+        width: 60%;
+    }
+
+    #cat-list{
+        justify-content: center;
+        /*flex-wrap: wrap;*/
+    }
+    #cat-list>li{
+        margin:2px;
+    }
+    .frame{
+        margin: 0px auto;
+    }
+
+    .circle{
+        width: 50px;
+        height: 50px;
+    }
+    #show-counter{
+        font-size: 1.2em;
+    }
+}
+

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Cat click counter project" />
+    <meta name="author" content="github.com/criamico">
+    <link rel="stylesheet" href="css/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Muli:400,300' rel='stylesheet' type='text/css'>
+
+    <title>Cat Click Counter</title>
+</head>
+
+<body>
+     <header>
+        <h1>Cat Click Counter</h1>
+        <p class='banner'>  Vote your favourite kitten!</p>
+     </header>
+
+    <div class="container">
+        <div class="frame">
+            <section class="list">
+                <ul id="cat-list"></ul>
+            </section>
+
+
+            <div class = "display" href= "">
+            <img id='cat_img' src="" alt="click on this cat!">
+                <div class = 'circle'>
+                    <p id="show-counter"> 0 </p>
+                </div>
+            </div>
+            <h2 id="cat-name"> </h2>
+            <input id= 'admin-button' type="button" value="EDIT"/>
+        </div> <!-- frame -->
+        <div id="overlay"></div>
+        <div class="admin">
+            <form class="admin-form">
+                 <label>New name <br> <input id="new-name" type="text" /></label><br/>
+                 <label>No. of clicks <br/> <span>Max value allowed is 999</span> <br><input id="new-click-no" type="number" max="3"/></label><br/>
+                 <input id="admin-submit" type="button" value="Save" />
+                 <input id="admin-cancel" type="button" value="Cancel"/>
+
+            </form> <!-- form -->
+
+        </div><!-- admin -->
+    </div> <!-- container -->
+
+<script type="text/javascript" src="js/app.js" defer></script>
+
+ </body>
+</html>
