@@ -215,7 +215,6 @@
             /*make the form visible*/
             if (flag == true){
                 this.form.style.display = 'block';
-                // this.centerModal();
                 controller.SetFormVisibility = true;
                 overlay.style.display = "block";
             }
@@ -249,7 +248,6 @@
                 });
             }
         },
-
     };
 
 
