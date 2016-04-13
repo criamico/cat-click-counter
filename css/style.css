@@ -132,7 +132,6 @@ a:hover{
 
 /*----------- Admin form and overlay ----------- */
 .admin{
-/*    position: relative;*/
     margin: 0 auto;
     width: 40%;
 }
@@ -151,8 +150,9 @@ a:hover{
 
 .admin-form{
     position: fixed;
-    top: 40%;
-    left:40%;
+    top: 25%;
+    left:50%;
+    transform: translate(-50%, 0px);
     text-align: left;
     padding: 30px;
     color: #303233;
@@ -237,10 +237,6 @@ span{
         left: 80%;
         top: 10%;
     }
-    .admin-form{
-        top: 30%;
-        left: 14%;
-    }
 }
 
 
@@ -261,11 +257,6 @@ span{
     #show-counter{
         font-size: 1.3em;
     }
-    .admin-form{
-        top: 35%;
-        left: 30%;
-    }
-
  }
 
  @media screen and (min-width: 851px) and (max-width: 1201px) {
